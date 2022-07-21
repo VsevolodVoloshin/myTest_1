@@ -1,0 +1,13 @@
+В результате запуска теста была выявлена ошибка в методе isTeenager(). Он выводит что тинейджер любое число лет < 19.
+Правильное условие,   вместо:        
+boolean result;
+       if (age < 19) {
+           result = true;}
+       else {
+           result = false;}
+       return result;
+
+делаем: 
+        {boolean result;
+        result = age < 19 && age > 12;
+        return result;}
